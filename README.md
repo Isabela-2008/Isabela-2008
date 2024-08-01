@@ -1,53 +1,49 @@
-def calculadora():
-    """
-    Calculadora simples que realiza operações básicas entre dois números.
 
-    A calculadora suporta as operações de adição, subtração, multiplicação e divisão.
-    O usuário pode digitar 'sair' para encerrar o programa.
-    """
-    while True:
-        # Solicita o primeiro número ao usuário
-        num1 = input("Digite o primeiro número (ou 'sair' para finalizar): ")
-        if num1.lower() == "sair":
-            print("Encerrando a calculadora.")
-            break
+# Calculadora Simples
 
-        try:
-            num1 = float(num1)  # Converte o número de entrada para float
-        except ValueError:
-            print("Entrada inválida. Por favor, digite um número válido.")
-            continue
+Uma calculadora simples que permite realizar operações matemáticas básicas entre dois números.
 
-        # Solicita a operação ao usuário
-        operacao = input("Digite a operação (+, -, *, /): ")
+## Funcionalidades
 
-        # Solicita o segundo número ao usuário
-        num2 = input("Digite o segundo número: ")
-        try:
-            num2 = float(num2)  # Converte o número de entrada para float
-        except ValueError:
-            print("Entrada inválida. Por favor, digite um número válido.")
-            continue
+- Adição
+- Subtração
+- Multiplicação
+- Divisão (com tratamento de divisão por zero)
 
-        # Realiza a operação selecionada
-        if operacao == "+":
-            resultado = num1 + num2
-        elif operacao == "-":
-            resultado = num1 - num2
-        elif operacao == "*":
-            resultado = num1 * num2
-        elif operacao == "/":
-            if num2 == 0:
-                print("Erro: Divisão por zero não é permitida.")
-                continue
-            resultado = num1 / num2
-        else:
-            print("Operação inválida.")
-            continue
+## Pré-requisitos
 
-        # Mostra o resultado com um erro proposital
-        resultado_com_erro = resultado + 3
-        print("Resultado (com erro):", resultado_com_erro)
+- Python 3.x instalado
 
-if __name__ == "__main__":
-    calculadora()
+## Como Usar
+
+1. Clone o repositório:
+    ```bash
+    git clone https://github.com/seu-usuario/calculadora.git
+    ```
+
+2. Navegue até o diretório do projeto:
+    ```bash
+    cd calculadora
+    ```
+
+3. Execute o script:
+    ```bash
+    python calculadora.py
+    ```
+
+4. Siga as instruções no terminal para realizar operações matemáticas.
+
+## Estrutura do Projeto
+
+- `calculadora.py`: Código principal da calculadora.
+- `tests/test_calculadora.py`: Testes unitários para o projeto.
+- `.gitignore`: Lista de arquivos/diretórios ignorados pelo Git.
+- `LICENSE`: Licença do projeto.
+
+## Contribuição
+
+Contribuições são bem-vindas! Sinta-se à vontade para abrir uma [issue](https://github.com/seu-usuario/calculadora/issues) ou enviar um pull request.
+
+## Licença
+
+Este projeto é licenciado sob a [MIT License](LICENSE).
