@@ -1,7 +1,4 @@
 🖐️ Olá! Eu sou Isabela Ribeiro Portillo
-<div align="center"> <!-- Substitua pela sua foto --> <img src="COLOQUE_AQUI_O_LINK_DA_SUA_FOTO" alt="Foto de Isabela Ribeiro Portillo" width="200" style="border-radius: 10px;"> </div>
-🌟 Mini-bio profissional
-
 Sou estudante de Desenvolvimento de Sistemas e apaixonada por tecnologia. Tenho experiência em criação de sites, desenvolvimento web, Python e bancos de dados SQL. Busco sempre aprender novas ferramentas e desenvolver projetos completos, tanto educativos quanto profissionais. Atualmente, estou focada em evoluir no desenvolvimento web e no backend com Python.
 
 🛠️ Principais habilidades
